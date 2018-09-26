@@ -149,7 +149,7 @@ function footer_slider($atts) {
         <div class="emergency-number">
           <p>After hours Emergency?</p>
           <p>Call Tri-County <br> Emergency Clinic:</p>
-          <h2>309-672-1565</h2>
+          <h2>515-515-5555</h2>
         </div>
         <div class="footer-icons">
           <a href="#" target="_blank"><i class="fab fa-google-plus-g"></i></a>
