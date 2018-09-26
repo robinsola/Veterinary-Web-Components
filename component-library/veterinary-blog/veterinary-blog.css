@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Lato|Quicksand);
+
+.veterinary-blog-container {
+  font-family: 'Lato', sans-sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.blog-container-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 1.7rem;
+  color: #E59500;
+  letter-spacing: 3px;
+  width: 100%;
+}
+
+.page-switch {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.page-switch a {
+  font-family: 'Quicksand', sans-serif;
+  color: #247BA0;
+  text-decoration: none;
+  margin: 20px;
+}
+
+.page-switch a:hover {
+  color: #E59500;
+}
+
+.blog-post {
+  padding: 20px 20px 50px 20px;
+}
+
+.blog-post h1 {
+  color: #247BA0;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #247BA0;
+}
+
+.blog-post p:first-of-type {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #606060;
+}
+
+.blog-post a {
+  font-size: 0.9rem;
+  color: #fff;
+  text-decoration: none;
+  background-color: #E59500;
+  border: 1px solid #E59500;
+  padding: 3px 6px;
+  float: right;
+  transition: all 0.3s;
+}
+
+.blog-post a:hover {
+  color: #E59500;
+  background-color: #fff;
+}
+
+.indented-content {
+  margin: 20px;
+  line-height: 30px;
+}

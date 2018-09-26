@@ -1,0 +1,131 @@
+.main-nav-container {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3c3c3c;
+  height: 80px;
+}
+
+.main-nav-mobile {
+  display: none;
+  cursor: pointer;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 5px 7px;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  transition: background-color 0.3s;
+}
+
+.main-nav-mobile:hover {
+  background-color: #66b9bf;
+}
+
+.main-nav-container ul {
+  cursor: pointer;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav-container a {
+  text-decoration: none;
+  padding: 10px;
+  white-space: nowrap;
+  color: #fff;
+}
+
+.main-nav-container .menu-item-has-children {
+  position: relative;
+  display: inline-block;
+  margin: 5px;
+}
+
+.main-nav-container .sub-menu {
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  top: 100%;
+  transform: translateY(-1.3em);
+  z-index: 999;
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.3);
+  background-color: #3c3c3c;
+  margin: 10px 0 0 0;
+  min-width: 160px;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-nav-container .menu-item-has-children:hover > .sub-menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s;
+}
+
+.main-nav-container .menu-item-has-children .sub-menu li {
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav-container .menu-item-has-children .sub-menu a {
+  display: block;
+  transition: background-color 0.2s;
+}
+
+.main-nav-container .menu-item-has-children .sub-menu a:hover {
+  background-color: #8c8c8c;
+}
+
+@media screen and (max-width:730px) {
+  .main-nav-mobile {
+    display: block;
+  }
+  .main-nav-loop {
+    display: none;
+  }
+  .main-nav-expand {
+    display: block;
+    background-color: black;
+    position: absolute;
+    z-index: 999;
+    top: 80px;
+    left: 0;
+    width: 100%;
+  }
+  .main-nav-expand ul.menu li {
+    padding: 10px 0;
+    border-bottom: 0.5px solid gray;
+  }
+  .main-nav-expand ul.menu li:hover a {
+    color: #66b9bf;
+  }
+  .main-nav-container {
+    position: relative;
+  }
+  .main-nav-container .menu-item-has-children {
+    display: block;
+  }
+  .main-nav-container .sub-menu {
+    display: none;
+    visibility: visible;
+    position: relative;
+    opacity: 1;
+    font-size: 0.8rem;
+    transform: translateY(0%);
+    box-shadow: none;
+    background-color: black;
+  }
+  .main-nav-container ul.sub-menu li {
+    border: 0;
+  }
+  .main-nav-expand ul.menu li:hover ul.sub-menu a {
+    color: white;
+  }
+  .main-nav-container .menu-item-has-children  > .sub-nav-expand {
+    display: flex;
+  }
+}

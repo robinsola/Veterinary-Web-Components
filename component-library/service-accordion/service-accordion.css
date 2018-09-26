@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Lato|Open+Sans);
+
+.accordion-container {
+  width: 360px;
+  margin: 30px auto;
+}
+
+.accordion-container .accordion-header {
+  text-align: center;
+  color: #e98e4e;
+}
+
+.accordion-container .accordion-header h1 {
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 1.7rem;
+  letter-spacing: 3px;
+}
+
+.accordion-container .accordion-item .title-box {
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  background-color: #66b9bf;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 10px 15px;
+  margin: 0;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.accordion-container .accordion-item .active, .accordion-container .accordion-item .title-box:hover {
+  background-color: #398b95;
+}
+
+.accordion-container .accordion-item .title-box:after {
+  content: '+';
+  float: right;
+}
+
+.accordion-container .accordion-item .active:after {
+  content: "-";
+  margin-right: 2px;
+}
+
+.accordion-container .accordion-item .hidden-contents {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  height: 100%;
+  background-color: #ffffff;
+  font-size: 1rem;
+  padding: 3px 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.hidden-contents p {
+  margin: 3px 0;
+}
+
+.hidden-contents a {
+  text-decoration: none;
+  font-weight: 500;
+  border: 1px solid #e98e4e;
+  padding: 5px 20px;
+  margin: 5px 0 15px 0;
+  color: #e98e4e;
+  float: right;
+  transition: all 0.5s;
+}
+
+.hidden-contents a:hover {
+  color: white;
+  background-color: #f4a375;
+  border-color: #f4a375;
+}
+
+@media screen and (max-width: 320px) {
+  .accordion-container {
+    width: 100%;
+  }
+  .accordion-container .accordion-item .title-box {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,147 @@
+@import url(https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans);
+
+.footer-slider-container {
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  background-color: #0b3b63;
+  border-top: 6px solid #91c02e;
+  padding: 30px 20px;
+}
+
+.footer-grid {
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+}
+
+.footer-slider-col h1 {
+  margin: 0 0 5px 0;
+  color: #91c02e;
+}
+
+.footer-slider-col p {
+  margin: 0;
+  font-weight: 300;
+}
+
+.address-group {
+  margin-bottom: 20px;
+}
+
+.center-addresses {
+  margin: 0 auto;
+}
+
+.slider-wrap {
+  width: 200px;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.footer-hours-slider {
+  display: flex;
+  width: 100%;
+  animation: scroller 15s ease-in-out 0s infinite;
+}
+
+@keyframes scroller {
+  0%   { transform: translateX(0); }
+  20%  { transform: translateX(0); }
+  33%  { transform: translateX(-200px); }
+  53%  { transform: translateX(-200px); }
+  66%  { transform: translateX(-400px); }
+  86%  { transform: translateX(-400px); }
+  100% { transform: translateX(0); }
+}
+
+.hours-slide {
+  display: flex;
+  flex-shrink: 0;
+  width: 200px;
+  height: 100%;
+}
+
+.footer-hours-slider p {
+  font-weight: bolder;
+  color: #2b8dd0;
+  margin-bottom: 5px;
+}
+
+.footer-hours-slider ul {
+  list-style: none;
+  padding: 0;
+  margin:0;
+}
+
+.hours-slide ul:nth-of-type(2) {
+  font-weight: 300;
+}
+
+.footer-hours-slider li {
+  padding: 5px;
+  border-bottom: 1px solid #fff;
+}
+
+.emergency-number {
+  align-self: flex-start;
+  text-align: center;
+  background-color: #1e6595;
+  border: 1px solid #91c02e;
+  padding: 0 15px;
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, .5);
+}
+
+.emergency-number p {
+  margin-top: 15px;
+}
+
+.emergency-number p:nth-of-type(2) {
+  font-weight: bolder;
+}
+
+.footer-icons {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-icons a {
+  color: #fff;
+}
+
+.footer-icons .fa-google-plus-g,.footer-icons .fa-instagram, .footer-icons .fa-facebook-f {
+  width: 35px;
+  background-color: #1e6595;
+  border-radius: 10px;
+  padding: 7px;
+  margin: 0 8px;
+  transition: background-color, 0.3s;
+}
+
+.footer-icons .fa-google-plus-g:hover, .footer-icons .fa-instagram:hover, .footer-icons .fa-facebook-f:hover {
+  background-color: #91c02e;
+}
+
+@media screen and (max-width: 885px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .span-last-col {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .center-addresses {
+    text-align: center;
+  }
+  .span-last-col {
+    grid-column: span 1;
+    margin-top: 30px;
+  }
+}

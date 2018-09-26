@@ -1,0 +1,65 @@
+@keyframes zoom {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+
+@keyframes modalDrop {
+  0% {
+    transform:translateY(-1500px) skewY(20deg) scaleY(1.3);
+  }
+  70% {
+    transform:translateY(85px) skewY(0deg) scaleY(.9);
+  }
+  100% {
+    transform:translateY(65px) skewY(0deg) scaleY(1);
+  }
+}
+
+.modal-popup-container {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  position: relative;
+  transform: translateY(-1500px);
+  transform: skewY(30deg);
+  margin: 0 auto;
+  width: 45%;
+  height: auto;
+  animation: modalDrop .3s ease-in-out forwards;
+}
+
+.modal-content img {
+  box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #343641;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 5px 10px;
+}
+
+.close-btn:hover, .close-btn:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width:850px) {
+  .modal-content {
+    width: 70%;
+}

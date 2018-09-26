@@ -1,0 +1,191 @@
+@import url(https://fonts.googleapis.com/css?family=Lato|Montserrat);
+
+.pet-plans-container {
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.pet-plans-container h1 {
+  font-size: 2rem;
+  color: #398b95;
+}
+
+/* plan navigation styling */
+
+.plan-menu-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.plan-menu-btn {
+  margin: 0 10px;
+}
+
+.plan-menu-nav h2 {
+  font-size: 1rem;
+  margin: 5px 0 0 0;
+  padding: 5px;
+  transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+}
+
+.plan-menu-nav button, .plan-menu-nav button:focus {
+  font-family: 'Lato', sans-sans-serif;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.plan-menu-nav img {
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #f5a532;
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  -o-filter: grayscale(0);
+  transition: filter 0.3s;
+  -webkit-transition: filter 0.3s;
+  -moz-transition: filter 0.3s;
+  -o-transition: filter 0.3s;
+}
+
+.plan-menu-btn:hover img, .plan-menu-btn:focus img, .plan-menu-btn:active img {
+  border: 4px solid #398b95;
+}
+
+.plan-menu-btn:focus h2, .plan-menu-btn:active h2 {
+  background-color: #398b95;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+
+/* pet plans slyling */
+
+.pet-plans-wrapper {
+  text-align: center;
+  background-color: #398b95;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#display-platinum {
+  display: none;
+}
+
+#display-gold {
+  display: none;
+}
+
+#display-silver {
+  display: none;
+}
+
+.pet-plan-item {
+  font-family: 'Lato', sans-sans-serif;
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px 0;
+  width: 440px;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, .3);
+  -webkit-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, .3);
+  -o-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, .3);
+}
+
+.pet-plan-item ul {
+  text-align: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pet-plan-item li {
+  padding: 8px 15px;
+}
+
+.pet-plan-item li:nth-of-type(odd) {
+  background-color: #e8e8e8;
+}
+
+.pet-plan-item h1 {
+  font-family: 'Montserrat';
+  margin: 0 0 20px 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #398b95;
+  color: #3c3c3c;
+}
+
+.pet-plan-item .fa-paw {
+  font-size: 3rem;
+}
+
+.platinum-paw {
+  color: 	#A9A9A9;
+}
+
+.gold-paw {
+  color: #f5a532;
+}
+
+.silver-paw {
+  color: #7699bc;
+}
+
+.style-checkmark {
+  float: left;
+  margin: 5px 5px 0 10px;
+}
+
+@media screen and (max-width:910px) {
+  .plan-menu-nav img {
+    width: 150px;
+    height: 150px;
+  }
+  .pet-plans-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .plan-menu-nav {
+    grid-template-columns: 1fr 1fr;
+  }
+  .plan-menu-nav h2 {
+    margin: 0 0 10px 0;
+  }
+  .plan-menu-btn:focus h2, .plan-menu-btn:active h2 {
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .pet-plan-item {
+    width: 100%;
+    margin: 10px;
+  }
+  .plan-menu-nav img {
+    width: 100px;
+    height: 100px;
+  }
+}

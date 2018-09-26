@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Patua+One|Lato|Open+Sans);
+
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.divider {
+  height: 2px;
+  width: 100%;
+  background-color: #398b95;
+  margin: 15px 0;
+}
+
+.testimonial-quote {
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #4c4c4c;
+  font-style: italic;
+  margin: 0 60px;
+}
+
+.testimonial-quote p {
+  line-height: 30px;
+}
+
+.testimonial-quote p:nth-child(4) {
+  text-align: right;
+  font-size: 1.2rem;
+}
+
+.button-sliders button {
+  cursor: pointer;
+  font-family: 'Patua One', sans-serif;
+  padding: 5px 14px;
+  border: 2px solid #66b9bf;
+  color: #66b9bf;
+  background-color: white;
+  font-size: 1.3rem;
+  border-radius: 50%;
+  margin: 10px 5px;
+  transition: color .5s, background-color .5s;
+}
+
+.button-sliders button:hover {
+  color: white;
+  background-color: #66b9bf;
+}
+
+.flex-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimonial-container h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 1.7rem;
+  color: #398b95;
+  letter-spacing: 3px;
+  width: 100%;
+}
+
+.flex-header .fa-quote-left {
+  font-size: 4rem;
+  color: #66b9bf;
+  opacity: 0.5;
+}
+
+.five-stars .fa-star {
+  color: orange;
+  font-size: 1.5rem;
+  margin: 10px 1px;
+}
+
+.five-stars {
+  text-align: center;
+}

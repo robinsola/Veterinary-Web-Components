@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Lato|Open+Sans);
+
+.service-loop-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+  margin: 0 auto;
+}
+
+.service-loop-container .service-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.service-item {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-width: 300px;
+  height: 300px;
+}
+
+.item-contents {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  top: 255px;
+  padding: 7px 0;
+  width: 100%;
+  transition: top .2s linear;
+  -webkit-transition: top .2s linear;
+}
+
+.service-item:hover .item-contents{
+  top: 130px;
+  transition: all .4s linear;
+  -webkit-transition: all .4s linear;
+}
+
+.service-item .item-contents h3 {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #95c5e0;
+}
+
+.service-item .item-contents p {
+  padding: 5px;
+  margin: 7px 0 12px 0;
+}
+
+.service-item .item-contents a {
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  transition: background-color .5s, color .5s;
+  -webkit-transition: background-color .5s, color .5s;
+}
+
+.service-item .item-contents a:hover {
+  background-color: #7798AB;
+  color: white;
+}
+
+@media screen and (min-width:740px) {
+  .service-loop-container {
+    grid-template-columns: 1fr 1fr;
+    max-width: 600px;
+  }
+  .service-item {
+    border-radius: 10px;
+  }
+}
+
+@media screen and (min-width:1050px) {
+  .service-loop-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1000px;
+  }
+}

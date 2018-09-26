@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Lato|Patua+One|Montserrat);
+
+.image-carousel-container {
+  margin: 20px;
+}
+
+#carouselSlides {
+  position: relative;
+  height: 450px;
+  max-width: 900px;
+}
+
+.image-slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 450px;
+  border-radius: 15px;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.5s;
+}
+
+.showing {
+  opacity: 1;
+  z-index: 2;
+}
+
+.carousel-wrap {
+  position: relative;
+  max-width: 900px;
+  height: 450px;
+  margin: 0 auto;
+}
+
+.carousel-wrap button {
+  cursor: pointer;
+  font-family: 'Patua One', sans-serif;
+  font-size: 2.5rem;
+  color: #046865;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: transparent;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.carousel-wrap button:hover {
+  color: #fff;
+  background-color: #046865;
+}
+
+.carousel-wrap button:nth-of-type(3) {
+  border: 1px solid #046865;
+  border-radius: 50%;
+  font-size: 1rem;
+}
+
+.back-btn {
+  position: absolute;
+  left: 0;
+  top: 150px;
+  z-index: 3;
+}
+
+.forward-btn {
+  position: absolute;
+  right: 0;
+  top: 150px;
+  z-index: 4;
+}
+
+.toggle-btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  z-index: 5;
+}
+
+.image-slide .text-block {
+  font-family: 'Lato', sans-serif;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, .5);
+  border-radius: 15px;
+  margin: 30px;
+  padding: 20px;
+}
+
+.image-slide .text-block h1 {
+  margin: 0;
+  color: #046865;
+}
+
+.image-slide .text-block a {
+  text-decoration: none;
+  color: #3C3C3C;
+}
+
+.image-slide .text-block a:hover {
+  color: #046865;
+}
+
+@media screen and (max-width:650px) {
+  .image-slide .text-block {
+    font-size: 0.8rem;
+    box-shadow: none;
+  }
+}

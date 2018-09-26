@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans);
+
+.veterinary-map-container {
+  margin: 30px;
+}
+
+.center-locations-title {
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 1.7rem;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #e98e4e;
+}
+
+.toggle-btns {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.toggle-btns button {
+  font-family: 'Lato', sans-serif;
+  cursor: pointer;
+  width: 280px;
+  height: auto;
+  margin: 5px 10px;
+  padding: 10px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #66b9bf;
+  transition: background-color 0.3s;
+}
+
+.toggle-btns button:hover {
+  background-color: #07889b;
+}
+
+.toggle-btns button:focus,
+.toggle-btns button:active {
+  background-color: #07889b;
+}
+
+.map-info-grid {
+  font-family: 'Lato', sans-serif;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.map-col {
+  grid-column: span 2;
+}
+
+.info-col h1{
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #66b9bf;
+}
+
+.info-col a {
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #e37222;
+  transition: color 0.3s;
+}
+
+.info-col a:hover {
+  color: #eeaa7b;
+}
+
+.info-col p{
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.info-col p:first-of-type{
+  font-weight: 600;
+  font-style: italic;
+}
+
+.veterinary-map-container .fa-phone-square {
+  margin-right: 10px;
+}
+
+.hours-grid {
+  display: flex;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.hours-grid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hours-grid li {
+  padding: 5px;
+  border-top: 1px solid #66b9bf;
+  border-bottom: 1px solid #66b9bf;
+}
+
+.hours-grid ul:first-of-type {
+  font-weight: bolder;
+}
+
+#display-map {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width:800px) {
+  .map-info-grid {
+    grid-template-columns: 1fr;
+  }
+  .info-col {
+    text-align: center;
+  }
+  .hours-grid {
+    justify-content: center;
+    text-align: left;
+  }
+  .toggle-btns {
+    flex-direction: column;
+    align-items: center;
+  }
+  #display-map {
+    height: 400px;
+  }
+}

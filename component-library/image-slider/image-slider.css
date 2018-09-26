@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Lato|Patua+One|Montserrat);
+
+.image-slider-container {
+  margin: 20px;
+}
+
+.slides-group {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+  height: 350px;
+  margin: 0 auto;
+}
+
+.slide-tab {
+  position: relative;
+  margin: 2.5px;
+  width: 90px;
+  overflow: hidden;
+  transition: width ease-in-out 0.5s;
+}
+
+.slide-tab:hover {
+  width: 100%;
+}
+
+.slide-tab:hover a {
+  opacity: 1;
+  transition: opacity 0.3s 0.3s;
+}
+
+.slide-tab a {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 15px;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  background-color: rgba(0, 0, 0, .5);
+  transition: opacity 0.2s 0s;
+}
+
+a.green:hover {
+  background-color: rgba(67, 154, 130, 0.7);
+}
+
+a.red:hover {
+  background-color: rgba(169, 68, 11, 0.7);
+}
+
+.opacity-shield {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 90px;
+}
+
+.green {
+  background-color: rgba(67, 154, 130, 0.7);
+}
+
+.red {
+  background-color: rgba(169, 68, 11, 0.7);
+}
+
+.slide-tab h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  position: absolute;
+  bottom: 110px;
+  left: 0;
+  right: 0;
+  margin: 0px;
+  padding: 0px;
+  transform: rotate(-90deg);
+}

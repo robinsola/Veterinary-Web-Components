@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+.service-specials-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-top: 8px solid #52489C;
+  border-bottom: 8px solid #52489C;
+}
+
+.service-special-item {
+  padding: 5px 15px;
+  margin: -1px 0;
+  background-size: 100% 200%;
+  background-image: linear-gradient(to top, transparent 50%, #52489C 50%);
+  background-position: 0 -100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.service-special-item:hover {
+  background-position: 0 0;
+}
+
+.service-specials-container a {
+  text-decoration: none;
+  color: #52489C;
+  font-family: 'Lato', sans-serif;
+  transition: color 0.5s;
+}
+
+.service-special-item:hover a {
+  color: #fff;
+}
+
+.service-special-item .fa-bone, .service-special-item .fa-home, .service-special-item .fa-tooth, .service-special-item .fa-heartbeat {
+  font-size: 4rem;
+  border: 4px solid;
+  border-radius: 30px;
+  margin-top: 15px;
+  padding: 15px;
+  color: #52489C;
+  transition: color 0.5s;
+}
+
+.service-special-item:hover .fa-bone, .service-special-item:hover .fa-home, .service-special-item:hover .fa-tooth, .service-special-item:hover .fa-heartbeat {
+  color: #98DFAF;
+}
+
+@media screen and (max-width: 735px) {
+  .service-specials-container {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+  }
+  .service-special-item {
+    border-top: 0.5px solid #52489C;
+  }
+}
