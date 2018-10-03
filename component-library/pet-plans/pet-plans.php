@@ -13,19 +13,23 @@ function pet_plans($atts) {
     'dog_platinum' => 'Platinum Contents',
     'dog_gold' => 'Gold Contents',
     'dog_silver' => 'Silver Contents',
+		'dog_image' => null,
 
     'cat_plan' => 'Plan Title',
     'cat_platinum' => 'Platinum Contents',
     'cat_gold' => 'Gold Contents',
     'cat_silver' => 'Silver Contents',
+		'cat_image' => null,
 
     'puppy_plan' => 'Plan Title',
     'puppy_gold' => 'Gold Contents',
     'puppy_silver' => 'Silver Contents',
+		'puppy_image' => null,
 
     'kitten_plan' => 'Plan Title',
     'kitten_gold' => 'Gold Contents',
     'kitten_silver' => 'Silver Contents',
+		'kitten_image' => null,
 	), $atts);
 	session_start();
   wp_localize_script( 'pet-plans', 'plans_data_object', $plans_data );
@@ -38,19 +42,19 @@ function pet_plans($atts) {
 		<h1>Preferred Pet Plans</h1>
     <div class="plan-menu-nav">
       <button class="plan-menu-btn" id="catPlans">
-        <img src="http://robin.ivetbuilds.com/wp-content/uploads/2018/08/cat.jpeg">
+        <img src="<?php echo $plans_data['cat_image']; ?>" alt="adult cat"/>
         <h2>Adult Cat</h2>
       </button>
       <button class="plan-menu-btn" id="dogPlans">
-        <img src="http://robin.ivetbuilds.com/wp-content/uploads/2018/08/gold-dog.jpeg">
+        <img src="<?php echo $plans_data['dog_image']; ?>" alt="adult dog"/>
         <h2>Adult Dog</h2>
       </button>
       <button class="plan-menu-btn" id="kittenPlans">
-        <img src="http://robin.ivetbuilds.com/wp-content/uploads/2018/08/kitten-stripped.jpeg">
+        <img src="<?php echo $plans_data['kitten_image']; ?>" alt="kitten"/>
         <h2>Kitten</h2>
       </button>
       <button class="plan-menu-btn" id="puppyPlans">
-        <img src="http://robin.ivetbuilds.com/wp-content/uploads/2018/08/puppy-white.jpeg">
+        <img src="<?php echo $plans_data['puppy_image']; ?>" alt="puppy"/>
         <h2>Puppy</h2>
       </button>
     </div>
