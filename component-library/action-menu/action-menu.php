@@ -46,7 +46,7 @@ function action_menu($atts) {
 					<img class="img-border" src="<?php echo $data['menu_img_2'] ?>" alt="Wellness Plans"/>
 				</div>
 				<div class="service-icon">
-					<i class="fas fa-bone"></i>
+					<i class="fas fa-paw"></i>
 				</div>
 			</div>
 		</a>
