@@ -21,6 +21,8 @@ function action_menu($atts) {
 	session_start();
 	?>
 
+	<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
 	<div class="service-grid-plugin">
 		<a href= "<?php echo $data['menu_link_1']; ?>" >
 			<div class="service-col">
@@ -31,7 +33,7 @@ function action_menu($atts) {
 					<img class="img-border" src="<?php echo $data['menu_img_1'] ?>" alt="New Patient Center"/>
 				</div>
 				<div class="service-icon">
-					<img src="http://robin.ivetbuilds.com/wp-content/uploads/2014/02/visit.png" alt="New Patient Center Icon"/>
+					<i class="fas fa-hospital"></i>
 				</div>
 			</div>
 		</a>
@@ -44,7 +46,7 @@ function action_menu($atts) {
 					<img class="img-border" src="<?php echo $data['menu_img_2'] ?>" alt="Wellness Plans"/>
 				</div>
 				<div class="service-icon">
-					<img src="http://robin.ivetbuilds.com/wp-content/uploads/2014/02/refills.png" alt="Wellness Plans Icon"/>
+					<i class="fas fa-bone"></i>
 				</div>
 			</div>
 		</a>
@@ -57,7 +59,7 @@ function action_menu($atts) {
 					<img class="img-border" src="<?php echo $data['menu_img_3'] ?>" alt="Make an Appointment"/>
 				</div>
 				<div class="service-icon">
-					<img src="http://robin.ivetbuilds.com/wp-content/uploads/2014/02/appointment.png" alt="Make an Appointment Icon"/>
+					<i class="far fa-calendar-check"></i>
 				</div>
 			</div>
 		</a>
