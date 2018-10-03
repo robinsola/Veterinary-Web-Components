@@ -8,6 +8,7 @@ Version: 0.1
 function odometer_4col($atts) {
 	ob_start();
 	$lp_data = shortcode_atts(array(
+		'background_image' => null,
     'odometer1' => '111',
     'odometer2' => '222',
     'odometer3' => '333',
@@ -41,7 +42,7 @@ function odometer_4col($atts) {
   </script>
 
   <div class="background-image-container">
-    <img src="http://robin.ivetbuilds.com/wp-content/uploads/2018/08/puppy.jpeg" alt="background image of dog"/>
+    <img src="<?php echo $lp_data['background_image']; ?>" alt="background image"/>
     <div class="odometer-container">
       <div class="stat-group">
         <h1 id="odometer1" class="odometer stat-digit"></h1>
