@@ -18,7 +18,7 @@ function landing_page_services($atts) {
 	<div class="landing-page-plugin">
 		<h1>Component Library</h1>
 		<p>for Veterinary Websites</p>
-		<img class="landing-page-img" src="http://robin.ivetbuilds.com/wp-content/uploads/2018/09/oscar-napping.png">
+		<img class="landing-page-img" src="http://vetcomponents.blogdrop.eu/wp-content/uploads/2018/10/oscar-napping.png">
 	</div>
 	<?php
 	return ob_get_clean();
