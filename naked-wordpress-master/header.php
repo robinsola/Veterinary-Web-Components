@@ -46,11 +46,11 @@
 <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 <header id="masthead" class="site-header">
 	<?php if (is_page('navbar-basic')) {
-		echo do_shortcode('[navbar_basic logo_image="http://vetcomponents.blogdrop.eu/wp-content/uploads/2018/10/vet-logo-2.png" home_link="/"]');
+		echo do_shortcode('[navbar_basic logo_image="http://vetcomponents.com/wp-content/uploads/2018/10/vet-logo-2.png" home_link="/"]');
 	} elseif (is_page('navbar-slider')) {
-		echo do_shortcode('[navbar_slider logo_image="http://vetcomponents.blogdrop.eu/wp-content/uploads/2018/10/vet-logo.png" home_link="/"]');
+		echo do_shortcode('[navbar_slider logo_image="http://vetcomponents.com/wp-content/uploads/2018/10/vet-logo.png" home_link="/"]');
 	} elseif (is_page('navbar-symmetrical')) {
-		echo do_shortcode('[navbar_symmetrical logo_image="http://vetcomponents.blogdrop.eu/wp-content/uploads/2018/10/orange-cat-logo.jpg" home_link="/" location_1="Seattle" location_1_ph="518-585-5250" location_2="Portland" location_2_ph="355-553-3599" email="emailus@animalhospital.com"]');
+		echo do_shortcode('[navbar_symmetrical logo_image="http://vetcomponents.com/wp-content/uploads/2018/10/orange-cat-logo.jpg" home_link="/" location_1="Seattle" location_1_ph="518-585-5250" location_2="Portland" location_2_ph="355-553-3599" email="emailus@animalhospital.com"]');
 	} else {
 		echo do_shortcode('[navbar_main]');
 		?>
