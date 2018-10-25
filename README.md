@@ -2,7 +2,7 @@
 ##### Robin Sola // September 24, 2018
 ---
 
-[View Live Demo](http://vetcomponents.blogdrop.eu/)
+[View Live Demo](http://vetcomponents.com/)
 
 ### Description
  A library of responsive and reusable components for the use of constructing veterinary hospital websites. Designed and developed during 5-week long internship for [iVET360](https://ivet360.com/).
